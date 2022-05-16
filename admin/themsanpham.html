@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+
+    <link type="text/css" href="../files/css/main.css" rel="stylesheet" />
+    <script type="text/javascript" src="../files/js/jquery_min.js"></script>
+    <script type="text/javascript" src="../files/js/danhmuc.js"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <div class="header">
+        <a href="danhmuc.html" title="Quản lý bán hàng" style="outline:none;">
+            <h1>QUẢN LÝ CỬA HÀNG ĐỒNG HỒ</h1>
+        </a>
+        <div class="logout">
+            Xin chào <b>ADMIN</b> | <a href="#" title="Log out">Log out</a>
+        </div>
+        <!--NAVIGATION BAR-->
+        <ul class="navigation">
+            <a href="danhmuc.html" title="Hãng sản xuất" class="navigation-item-selected">
+                <li>Hãng sản xuất</li>
+            </a>
+            <a href="sanpham.html" title="Quản lý sản phẩm">
+                <li>Quản lý sản phẩm</li>
+            </a>
+            <a href="donhang.html" title="Quản lý đơn hàng">
+                <li>Quản lý đơn hàng</li>
+            </a>
+        </ul>
+        <!--NAVIGATION BAR-->
+    </div>
+    <!--END HEADER-->
+
+
+    <!--CONTENT-->
+    <div class="content">
+        <p class="content-title">Thêm sản phẩm mới</p>
+        <form name="frmThemDanhMucMoi" id="frmThemDanhMucMoi" method="post" action="#">
+            Tên sản phẩm:<br/>
+            <input type="text" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/> Hãng sản xuất:<br/>
+            <select class="txt" name="cmbDanhMuc" id="cmbDanhMuc" style="width:320px;">
+            	<option value="1">G-Shock</option>
+                <option value="2">NAKZEN</option>
+                <option value="3">Apple</option>
+                <option value="4">CASIO</option>
+            </select>
+            <br/><br/> Hình ảnh:<br/>
+            <input type="file" id="myfile" name="myfile"><br><br> Số lượng:<br/>
+            <input type="number" min="1" max="99999" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/> Đơn giá:<br/>
+            <input type="number" min="1" max="100000000" class="txt" name="txtTenDanhMuc" id="txtTenDanhMuc" required style="width:300px;" /><br/><br/>
+            <input type="submit" class="btn" name="btnThemDanhMuc" id="btnThemDanhMuc" value="Thêm" />
+        </form>
+    </div>
+    <!--END CONTENT-->
+
+
+
+</body>
+
+</html>

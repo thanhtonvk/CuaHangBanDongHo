@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>Đặt hàng</title>
+    <link rel="icon" href="http://www.thuthuatweb.net/wp-content/themes/HostingSite/favicon.ico" type="image/x-ico" />
+    <link href="./style/cart.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style/index.css" />
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="header-top">
+            <div id="logo">
+                <a href="./index.html">
+                    <img id="img-logo" src="image/logo.png" alt="">
+                </a>
+            </div>
+            <div id="menu">
+                <ul id="main-menu">
+                    <li class="text"><a class="index" href="./index.html">Trang chủ</a></li>
+                    <li class="text"><a class="index" href="#hang-dong-ho">Hãng đồng hồ</a>
+                        <ul id="sb-menu">
+                            <li class="sb-text"><a class="sb-index" href="#">Casia</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">TommyHilfiger</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">Fossil</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">Citizen</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">DKNY</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">Titoni</a></li>
+                            <li class="sb-text"><a class="sb-index" href="#">G-Shock</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="text"><a class="index" href="#pk">Phụ kiện đồng hồ</a> </li>
+                    <li class="text"><a class="index" href="#form_Demo">Liên Hệ</a></li>
+                    <li class="text"><a class="index" href="dangnhapp/dangnhap.html">Đăng nhập</a></li>
+                </ul>
+            </div>
+            <div id="cart">
+                <a href="cart.html" id="gio-hang">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <input id="number" type="text" value="0">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="shopping-cart">
+
+        <div class="column-labels">
+            <label class="product-image">Hình ảnh</label>
+            <label class="product-details">Sản phẩm</label>
+            <label class="product-price">Giá</label>
+            <label class="product-quantity">Số lượng</label>
+            <label class="product-removal">Xóa</label>
+            <label class="product-line-price">Tổng</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="./image/product/casio-a168wemb-1bdf-nu-thumb-600x600.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Casio A168 nữ</div>
+
+            </div>
+            <div class="product-price">1.500.000</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+					Xóa
+				</button>
+            </div>
+            <div class="product-line-price">150000000</div>
+        </div>
+
+
+        <div class="product">
+            <div class="product-image">
+                <img src="./image/product/casio-aeq-120w-1avdf-nam-thumb-1.-600x600.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Casio AEP 120w</div>
+
+            </div>
+            <div class="product-price">1.500.000</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+					Xóa
+				</button>
+            </div>
+            <div class="product-line-price">150000000</div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="./image/product/casio-w-218hc-4avdf-nu-thumb-600x600.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">Casio w 218HC</div>
+
+            </div>
+            <div class="product-price">1.500.000</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+					Xóa
+				</button>
+            </div>
+            <div class="product-line-price">150000000</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="./image/product/nakzen-ss4095g-1-nam-thumb-600x600.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">NAKZEN ss4095</div>
+            </div>
+            <div class="product-price">15.000.0000</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+					Xóa
+				</button>
+            </div>
+            <div class="product-line-price">1.500.000</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Tổng tiền</label>
+                <div class="totals-value" id="cart-subtotal">5.000.0000</div>
+            </div>
+            <div class="totals-item">
+                <label>Thuế (5%)</label>
+                <div class="totals-value" id="cart-tax">1.000.000</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">1.500.000</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Tổng thanh toán</label>
+                <div class="totals-value" id="cart-total">6.250.000</div>
+            </div>
+        </div>
+
+        <button class="checkout" style="width: 15%;border-radius: 10px;">Đặt hàng</button>
+
+    </div>
+    <div class="footer-bar">
+
+
+    </div>
+    <div id="text-lh" data-aos="fade-up" data-aos-duration="3000">
+        <h1 id="lh-1">
+            CHÚNG TÔI LÀ AI?
+        </h1>
+        <p class="why">
+            Đăng Quang Watch cam kết sản phẩm ở đây là hàng chính hãng bán lẻ rẻ nhất thị trường, đội ngũ nhân viên năng động, giàu kinh nghiệm sẽ tư vấn hỗ trợ giúp khách hàng có những sản phẩm ưng ý nhất. Chế độ bảo hành của sản phẩm ở đây lên đến 5 - 10 năm. Cam
+            kết sẽ hỗ trợ, thay pin miễn phí cho khách hàng mua sản phẩm tại DuyWatch trong 10 năm.
+        </p>
+        <div class="foot-logo">
+            <img src="image/logo.png" alt="">
+        </div>
+    </div>
+    <!-- End text-lh -->
+    <div id="lien-he">
+        <div class="moto-aos" data-aos="fade-right">
+            <img src="image/background.jpg" alt="" class="aos-moto">
+        </div>
+    </div>
+    <div id="text-lh" data-aos="fade-up" data-aos-duration="3000">
+        <h1 id="lh-1" style="color:white">
+            TẠI SAO LÀ CHÚNG TÔI?
+        </h1>
+        <p class="why" style="color:white">
+            Chúng tôi biết cách giải quyết các vấn đề khi kinh doanh về đồng hồ. Đội ngũ kho chuyên nghiệp xử lý hàng nghìn đơn hàng hàng ngày, Chúng tôi muốn trở thành cầu nối giữa Miền Bắc và thị trường nước ngoài để mang đến nhiều sản phẩm cho người dùng đồng
+            hồ toàn thế giới.
+        </p>
+    </div>
+
+
+    <div id="alert" style="display: none;">
+        Chúng tôi sẽ liên hệ với bạn sau khi nhận được tin nhắn
+    </div>
+
+    <div id="footer">
+        <div class="dich-vu">
+            <p class="text-ft">Dịch Vụ Khách Hàng</p>
+            <ul class="sb-dich-vu">
+                <li class="text-dv">Liên hệ</li>
+                <li class="text-dv">Chi phí vận chuyển</li>
+                <li class="text-dv">Dịch vụ trả hàng</li>
+                <li class="text-dv">Đảm bảo hoàn tiền</li>
+                <li class="text-dv">Theo dõi vận chuyển</li>
+            </ul>
+        </div>
+        <div class="don-dat-hang">
+            <p class="text-ft">Dịch Vụ Giao Hàng</p>
+            <ul class="sb-dh">
+                <li class="text-dh">Tình trạng đặt hàng</li>
+                <li class="text-dh">Tài khoản của bạn</li>
+                <li class="text-dh">Giỏ hàng</li>
+                <li class="text-dh">Giao hàng</li>
+                <li class="text-dh">Thanh toán</li>
+                <li class="text-dh">Điều khoản và điều kiện sử dụng</li>
+            </ul>
+        </div>
+        <div class="ve-chung-toi">
+            <p class="text-ft">Về Chúng Tôi</p>
+            <a href="#" class="ic-ft"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#" class="ic-ft"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="ic-ft"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="ic-ft"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </div>
+        <div class="visa">
+            <div class="text-ft">Thời gian làm việc</div>
+            <hr width="15%" class="rulerr" color="white" align="left">
+            <div class="time_work">
+                <div class="day">MonDAy</div>
+                <div class="times">7:30 am - 5:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">TuesDAy</div>
+                <div class="times">7:30 am - 5:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">WednesDAy</div>
+                <div class="times">7:30 am - 5:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">ThursDAy</div>
+                <div class="times">7:30 am - 5:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">FriDAy</div>
+                <div class="times">7:30 am - 5:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">SaturDAy</div>
+                <div class="times">8:30 am - 4:00 pm</div>
+            </div>
+            <div class="time_work">
+                <div class="day">SunDAy</div>
+                <div class="times">Closed - Closed</div>
+            </div>
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" method="post" style="width: 30%">
+            <div class="imgcontainer">
+
+                <img src="https://img.icons8.com/pastel-glyph/64/000000/person-male--v3.png" class="Avatar" />
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Tài khoản</b></label>
+                <input type="text" placeholder="Nhập tài khoản" name="uname" required>
+
+                <label for="psw"><b>Mật khẩu</b></label>
+                <input type="password" placeholder="Nhập mật khẩu" name="psw" required>
+
+                <button type="submit" onclick="openWin()">Đăng nhập</button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    AOS.init();
+    $(document).ready(function() {
+        var tang = 0;
+        var put = document.getElementById("number");
+        for (var i = 0; i < $(".buy").length; i++) {
+            $(".buy").eq(i).on('click', function() {
+                tang++;
+                put.value = tang;
+                alert("Đã Thêm Vào Giỏ Hàng");
+            })
+        }
+        var typed = new Typed('.ngon_ngu', {
+            strings: [
+                "YAMAHA",
+                "HONDA",
+                "SUZUKI",
+                "KAWASAKI",
+                "DUCATI",
+                "LAMBRETTA",
+                "BENELLO",
+                "DAVIDSON",
+                "PIAGGIO",
+                "MV-AGUSTA",
+            ],
+            typeSpeed: 80,
+            backSpeed: 40,
+            loop: true,
+        });
+
+        $('#form_Demo').validate({
+            rules: {
+                ten: "required",
+                sdt: "required",
+                mail: "required",
+                diachi: {
+                    required: true,
+                    minlength: 5
+                }
+            },
+            messages: {
+                ten: "Vui lòng nhập họ và tên",
+                sdt: "Vui lòng nhập số đồng hồ",
+                mail: "Vui lòng nhập email",
+                diachi: {
+                    required: "Vui lòng nhập địa chỉ",
+                    minlength: "Địa chỉ ngắn vậy, chém gió ah?"
+                }
+            }
+        });
+
+        $("#alert").dialog({
+            autoOpen: false,
+            show: {
+                effect: "blind",
+                duration: 1000
+            },
+            hide: {
+                effect: "explode",
+                duration: 1000
+            },
+            width: 600,
+            height: "auto",
+            modal: true,
+            buttons: {
+                "Đồng Ý": function() {
+                    $(this).dialog("close");
+                },
+            }
+        });
+    });
+
+    function hello() {
+        $("#alert").dialog("open");
+    }
+
+    function openWin() {
+        window.open("./danhmuc.html");
+    }
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+        /* Set rates + misc */
+        var taxRate = 0.05;
+        var shippingRate = 15.00;
+        var fadeTime = 300;
+
+
+        /* Assign actions */
+        $('.product-quantity input').change(function() {
+            updateQuantity(this);
+        });
+
+        $('.product-removal button').click(function() {
+            removeItem(this);
+        });
+
+
+        /* Recalculate cart */
+        function recalculateCart() {
+            var subtotal = 0;
+
+            /* Sum up row totals */
+            $('.product').each(function() {
+                subtotal += parseFloat($(this).children('.product-line-price').text());
+            });
+
+            /* Calculate totals */
+            var tax = subtotal * taxRate;
+            var shipping = (subtotal > 0 ? shippingRate : 0);
+            var total = subtotal + tax + shipping;
+
+            /* Update totals display */
+            $('.totals-value').fadeOut(fadeTime, function() {
+                $('#cart-subtotal').html(subtotal.toFixed(2));
+                $('#cart-tax').html(tax.toFixed(2));
+                $('#cart-shipping').html(shipping.toFixed(2));
+                $('#cart-total').html(total.toFixed(2));
+                if (total == 0) {
+                    $('.checkout').fadeOut(fadeTime);
+                } else {
+                    $('.checkout').fadeIn(fadeTime);
+                }
+                $('.totals-value').fadeIn(fadeTime);
+            });
+        }
+
+
+        /* Update quantity */
+        function updateQuantity(quantityInput) {
+            /* Calculate line price */
+            var productRow = $(quantityInput).parent().parent();
+            var price = parseFloat(productRow.children('.product-price').text());
+            var quantity = $(quantityInput).val();
+            var linePrice = price * quantity;
+
+            /* Update line price display and recalc cart totals */
+            productRow.children('.product-line-price').each(function() {
+                $(this).fadeOut(fadeTime, function() {
+                    $(this).text(linePrice.toFixed(2));
+                    recalculateCart();
+                    $(this).fadeIn(fadeTime);
+                });
+            });
+        }
+
+
+        /* Remove item from cart */
+        function removeItem(removeButton) {
+            /* Remove row from DOM and recalc cart total */
+            var productRow = $(removeButton).parent().parent();
+            productRow.slideUp(fadeTime, function() {
+                productRow.remove();
+                recalculateCart();
+            });
+        }
+
+    });
+</script>
+
+</body>
+
+</html>

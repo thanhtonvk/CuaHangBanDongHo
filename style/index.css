@@ -1,0 +1,1113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: segoe ui light;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+}
+
+#header-top {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+#header-top #logo {
+    width: 20%;
+}
+
+#img-logo {
+    width: 100%;
+    height: 100%;
+}
+
+#header-top #menu {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-top #menu #main-menu {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+#header-top #menu #main-menu .text {
+    width: 24%;
+    text-align: center;
+    padding: 2% 0;
+    position: relative;
+}
+
+#header-top #menu #main-menu .text .index {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#header-top #cart {
+    width: 10%;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#number {
+    width: 10%;
+    text-align: center;
+}
+
+#gio-hang {
+    text-decoration: none;
+}
+
+#sb-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    list-style: none;
+    display: none;
+    margin-top: 10%;
+    background-color: black;
+}
+
+.text:hover #sb-menu {
+    display: block;
+}
+
+.text:hover {
+    border: 2px solid gray;
+}
+
+.sb-text {
+    padding: 3% 0;
+}
+
+.sb-index {
+    color: white;
+    text-decoration: none;
+}
+
+#header-mid {
+    display: flex;
+    padding-top: 5%;
+}
+
+.left {
+    width: 40%;
+}
+
+#img-bg {
+    width: 100%;
+    height: auto;
+}
+
+.right {
+    width: 60%
+}
+
+.introduce {
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: rgb(237, 29, 36);
+}
+
+.hello {
+    font-size: 45px;
+}
+
+.text-right {
+    width: 70%;
+    text-align: justify;
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.view-more {
+    margin-top: 5%;
+}
+
+.view {
+    display: inline-block;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #ed1d24;
+    border: 1px solid #ed1d24;
+    border-radius: 2px;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    transition: 1s;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.view2 {
+    background-color: white;
+    color: black;
+    border: 1px solid #e5e5e5;
+}
+
+.text-view {
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    left: 32%;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.view:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transition: 0.4s;
+}
+
+.view:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transition: 0.4s;
+}
+
+.view:after {
+    content: '';
+    display: inline-block;
+    width: 15%;
+    height: 1px;
+    background: white;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transition: 0.4s;
+}
+
+.ic-arrow {
+    position: absolute;
+    right: 7%;
+    top: 34%;
+}
+
+.view:hover:before {
+    width: 25%;
+}
+
+.view:hover:after {
+    width: 0;
+}
+
+.view2:before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transition: 0.4s;
+}
+
+.view2:after {
+    content: '';
+    display: inline-block;
+    width: 15%;
+    height: 1px;
+    background: black;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transition: 0.4s;
+}
+
+.view:hover .text-view {
+    left: 45%;
+}
+
+
+/* End Header */
+
+#middle {
+    width: 100%;
+    background-color: white
+}
+
+#sub-middle {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 1px 8px 0px rgb(0 0 0 / 26%);
+}
+
+#hang-xe {
+    width: 20%;
+    margin: auto;
+    padding-top: 3%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.list-logo {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.logo-hang-dong-ho {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ebebeb;
+    text-align: center;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.logo-dong-ho {
+    width: 50%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.logo-hang-dong-ho:hover .logo-dong-ho {
+    transform: scale(1.1);
+}
+
+.list-dt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2%;
+    padding: 0 3%;
+}
+
+.frame {
+    width: 19%;
+    margin: 3px;
+}
+
+.sb-top {
+    width: 100%;
+    height: 320px;
+}
+
+.image-dt {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    width: 100%;
+    background-color: #80808040;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.gia-ban {
+    color: #e61e48;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 2% 0;
+}
+
+.new {
+    display: inline-block;
+    padding: 0px 5px;
+    border: 1px solid #f49500;
+    color: #f49500;
+    display: -webkit-inline-box;
+    font-size: 0.75rem;
+}
+
+.time {
+    font-style: italic;
+    color: #595959;
+    font-size: 12px;
+}
+
+.gop {
+    display: flex;
+}
+
+.buy {
+    color: white;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    background: red;
+    font-weight: bold;
+    margin-top: 5%;
+    cursor: pointer;
+    border-right: 3px solid black
+}
+
+.chi-tiet {
+    color: white;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    background: orange;
+    font-weight: bold;
+    margin-top: 5%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buy:hover {
+    background-color: black;
+    color: white;
+}
+
+.chi-tiet:hover {
+    background-color: black;
+    color: white;
+}
+
+.tieu-de {
+    padding: 1% 3%;
+}
+
+.yama {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+#pk {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+}
+
+.frame-pk {
+    width: 23%;
+    border: 1px solid rgb(204 204 204);
+    margin-bottom: 5%;
+}
+
+.img-pk {
+    width: 100%;
+    height: 350px;
+}
+
+.text-pk {
+    color: #383838;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.price-pk {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff1b1b;
+    margin-top: 4%;
+}
+
+.pk-bot {
+    padding: 5% 5% 0% 5%;
+    border-top: 1px solid rgb(204 204 204);
+}
+
+.frame-pk:hover {
+    border: 2px solid #ff1b1b;
+}
+
+#text-lh {
+    width: 80%;
+    margin: auto;
+    padding: 5% 0;
+}
+
+#lh-1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#lien-he {
+    widows: 100%;
+    height: 500px;
+    background-image: url(image/bg-lh.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.why {
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+.foot-logo {
+    text-align: center;
+}
+
+#foot-lien-he {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ten {
+    display: block;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-bottom: 5%;
+}
+
+.ten_1 {
+    margin-bottom: 5%;
+}
+
+#form_Demo {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px solid black;
+    padding-top: 2%;
+    margin-right: 5%;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+#but_1 {
+    height: 40px;
+}
+
+.moto-aos {
+    widows: 30%;
+}
+
+.aos-moto {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    background-color: #202732;
+    display: flex;
+    padding: 5%;
+    margin-top: 2%;
+}
+
+.dich-vu {
+    width: 25%;
+}
+
+.text-dv {
+    height: 20px;
+    text-align: left;
+    padding-right: 10px;
+    margin: 5px 0;
+    color: #8996aa;
+}
+
+.don-dat-hang {
+    width: 25%;
+}
+
+.text-dh {
+    height: 20px;
+    text-align: left;
+    padding-right: 10px;
+    margin: 5px 0;
+    color: #8996aa;
+}
+
+.ve-chung-toi {
+    width: 10%;
+    text-align: center;
+}
+
+.visa {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.text-ft {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.ic-ft {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5%;
+    -webkit-box-reflect: below 0.2px linear-gradient(transparent, #088bed96);
+    ;
+}
+
+.time_work {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+.day {
+    width: 30%;
+    color: white;
+}
+
+.times {
+    width: 65%;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+
+/* Center the image and position the close button */
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.ten-dong-ho {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.gia-ban {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* Add Zoom Animation */
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* Change styles for span and cancel button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+/* Global settings */
+
+.product-image {
+    float: left;
+    width: 20%;
+}
+
+.product-details {
+    float: left;
+    width: 37%;
+}
+
+.product-price {
+    float: left;
+    width: 12%;
+}
+
+.product-quantity {
+    float: left;
+    width: 10%;
+}
+
+.product-removal {
+    float: left;
+    width: 9%;
+}
+
+.product-line-price {
+    float: left;
+    width: 12%;
+    text-align: right;
+}
+
+
+/* This is used as the traditional .clearfix class */
+
+.group:before,
+.shopping-cart:before,
+.column-labels:before,
+.product:before,
+.totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    content: '';
+    display: table;
+}
+
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+    clear: both;
+}
+
+.group,
+.shopping-cart,
+.column-labels,
+.product,
+.totals-item {
+    zoom: 1;
+}
+
+
+/* Apply clearfix in a few places */
+
+
+/* Apply dollar signs */
+
+.product .product-price:before,
+.product .product-line-price:before,
+.totals-value:before {
+    content: '$';
+}
+
+
+/* Body/Header stuff */
+
+body {
+    padding: 0px 30px 30px 20px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 100;
+}
+
+label {
+    color: #aaa;
+}
+
+.shopping-cart {
+    margin-top: -45px;
+}
+
+
+/* Column headers */
+
+.column-labels label {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.column-labels .product-image,
+.column-labels .product-details,
+.column-labels .product-removal {
+    text-indent: -9999px;
+}
+
+
+/* Product entries */
+
+.product {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.product .product-image {
+    text-align: center;
+}
+
+.product .product-image img {
+    width: 100px;
+}
+
+.product .product-details .product-title {
+    margin-right: 20px;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+.product .product-details .product-description {
+    margin: 5px 20px 5px 0;
+    line-height: 1.4em;
+}
+
+.product .product-quantity input {
+    width: 40px;
+}
+
+.product .remove-product {
+    border: 0;
+    padding: 4px 8px;
+    background-color: #c66;
+    color: #fff;
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.product .remove-product:hover {
+    background-color: #a44;
+}
+
+
+/* Totals section */
+
+.totals .totals-item {
+    float: right;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.totals .totals-item label {
+    float: left;
+    clear: both;
+    width: 79%;
+    text-align: right;
+}
+
+.totals .totals-item .totals-value {
+    float: right;
+    width: 21%;
+    text-align: right;
+}
+
+.totals .totals-item-total {
+    font-family: "HelveticaNeue-Medium", "Helvetica Neue Medium";
+}
+
+.checkout {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #6b6;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.checkout:hover {
+    background-color: #494;
+}
+
+
+/* Make adjustments for tablet */
+
+@media screen and (max-width: 650px) {
+    .shopping-cart {
+        margin: 0;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+    .column-labels {
+        display: none;
+    }
+    .product-image {
+        float: right;
+        width: auto;
+    }
+    .product-image img {
+        margin: 0 0 10px 10px;
+    }
+    .product-details {
+        float: none;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .product-price {
+        clear: both;
+        width: 70px;
+    }
+    .product-quantity {
+        width: 100px;
+    }
+    .product-quantity input {
+        margin-left: 20px;
+    }
+    .product-quantity:before {
+        content: 'x';
+    }
+    .product-removal {
+        width: auto;
+    }
+    .product-line-price {
+        float: right;
+        width: 70px;
+    }
+}
+
+
+/* Make more adjustments for phone */
+
+@media screen and (max-width: 350px) {
+    .product-removal {
+        float: right;
+    }
+    .product-line-price {
+        float: right;
+        clear: left;
+        width: auto;
+        margin-top: 10px;
+    }
+    .product .product-line-price:before {
+        content: 'Item Total: $';
+    }
+    .totals .totals-item label {
+        width: 60%;
+    }
+    .totals .totals-item .totals-value {
+        width: 40%;
+    }
+}
+
+
+/*Thats all. I hope you enjoyed it.
+  Thanks :)*/
+
+
+/***************************************************************/
+
+
+/*************** Footer Bar Style ******************************/
+
+
+/***************************************************************/
+
+.footer-bar {
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #111;
+    border-top: 1px solid #E62600;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-bar .article-wrapper {
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #888;
+    float: left;
+    margin-left: 10%;
+}
+
+.footer-bar .article-link a,
+.footer-bar .article-link a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.site-link a,
+.site-link a:visited {
+    color: #888;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    float: right;
+    margin-right: 10%;
+    text-decoration: none;
+}
+
+.site-link a:hover {
+    color: #E62600;
+}

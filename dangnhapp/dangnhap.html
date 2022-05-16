@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body style="background-image: url(../image/background.jpg);">
+        <div class="loginbox">
+            <img src="avatar.png" class="avatar">
+            <h1>Đăng nhập tại đây</h1>
+            <form>
+                <p>Tài khoản</p>
+                <input type="text" name="" placeholder="Nhập tài khoản">
+                <p>Mật khẩu</p>
+                <input type="password" name="" placeholder="Nhập mật khẩu">
+                <input type="submit" name="" value="Đăng nhập" id="btn-login" onclick="myFunction()">
+                <a href="file:///E:/WEB/quenmk/quenmk.html">Quên mật khẩu?</a><br>
+                <a href="../dangkyy/dangky.html" target="blank">Bạn chưa có tài khoản, nhấp vào đăng ký !</a>
+            </form>
+
+        </div>
+
+    </body>
+</head>
+<script>
+    document.addEventListener("click", myFunction);
+
+    function myFunction() {
+        window.open('../admin/danhmuc.html')
+    }
+</script>
+
+</html>
