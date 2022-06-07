@@ -16,6 +16,7 @@
     <script src="library/aos_css/aos.js"></script>
     <script src="library/query/jqueruUI/jquery-ui.js"></script>
     <link rel="stylesheet" href="./style/index.css">
+    <script src="./files/js/giohang.js"></script>
 </head>
 
 <body>
@@ -774,9 +775,7 @@
         var put = document.getElementById("number");
         for (var i = 0; i < $(".buy").length; i++) {
             $(".buy").eq(i).on('click', function() {
-                tang++;
-                put.value = tang;
-                alert("Đã Thêm Vào Giỏ Hàng");
+                addCart()
             })
         }
         var typed = new Typed('.ngon_ngu', {

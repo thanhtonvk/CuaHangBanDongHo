@@ -59,103 +59,12 @@
             <label class="product-line-price">Tổng</label>
         </div>
 
-        <div class="product">
-            <div class="product-image">
-                <img src="./image/product/casio-a168wemb-1bdf-nu-thumb-600x600.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Casio A168 nữ</div>
 
-            </div>
-            <div class="product-price">1.500.000</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-					Xóa
-				</button>
-            </div>
-            <div class="product-line-price">150000000</div>
+
+        <div id="GioHang">
+
         </div>
 
-
-        <div class="product">
-            <div class="product-image">
-                <img src="./image/product/casio-aeq-120w-1avdf-nam-thumb-1.-600x600.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Casio AEP 120w</div>
-
-            </div>
-            <div class="product-price">1.500.000</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-					Xóa
-				</button>
-            </div>
-            <div class="product-line-price">150000000</div>
-        </div>
-        <div class="product">
-            <div class="product-image">
-                <img src="./image/product/casio-w-218hc-4avdf-nu-thumb-600x600.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">Casio w 218HC</div>
-
-            </div>
-            <div class="product-price">1.500.000</div>
-            <div class="product-quantity">
-                <input type="number" value="2" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-					Xóa
-				</button>
-            </div>
-            <div class="product-line-price">150000000</div>
-        </div>
-
-        <div class="product">
-            <div class="product-image">
-                <img src="./image/product/nakzen-ss4095g-1-nam-thumb-600x600.jpg">
-            </div>
-            <div class="product-details">
-                <div class="product-title">NAKZEN ss4095</div>
-            </div>
-            <div class="product-price">15.000.0000</div>
-            <div class="product-quantity">
-                <input type="number" value="1" min="1">
-            </div>
-            <div class="product-removal">
-                <button class="remove-product">
-					Xóa
-				</button>
-            </div>
-            <div class="product-line-price">1.500.000</div>
-        </div>
-
-        <div class="totals">
-            <div class="totals-item">
-                <label>Tổng tiền</label>
-                <div class="totals-value" id="cart-subtotal">5.000.0000</div>
-            </div>
-            <div class="totals-item">
-                <label>Thuế (5%)</label>
-                <div class="totals-value" id="cart-tax">1.000.000</div>
-            </div>
-            <div class="totals-item">
-                <label>Shipping</label>
-                <div class="totals-value" id="cart-shipping">1.500.000</div>
-            </div>
-            <div class="totals-item totals-item-total">
-                <label>Tổng thanh toán</label>
-                <div class="totals-value" id="cart-total">6.250.000</div>
-            </div>
-        </div>
 
         <button class="checkout" style="width: 15%;border-radius: 10px;">Đặt hàng</button>
 
@@ -448,6 +357,39 @@
                 recalculateCart();
             });
         }
+
+        function removeCart(index) {
+            list.remove(index)
+            location.reload()
+        }
+
+        var jsonString = localStorage.getItem('gioHang')
+        var list = JSON.parse(jsonString)
+        var html = ''
+        for (var i = 0; i < list.length; i++) {
+            html = html + `<div class="product" id = "product-id${i}">
+            <div class="product-image">
+                <img src="${list[i].HinhAnh}">
+            </div>
+            <div class="product-details">
+                <div class="product-title">${list[i].TenSP}</div>
+
+            </div>
+            <div class="product-price">${list[i].GiaBan}</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product" onclick = " var jsonString = localStorage.getItem('gioHang');
+        var list = JSON.parse(jsonString);list.splice(${i},1);localStorage.setItem('gioHang', JSON.stringify(list));location.reload()">
+					Xóa
+				</button>
+            </div>
+            <div class="product-line-price">${list[i].GiaBan}</div>
+        </div>`
+        }
+        document.getElementById('GioHang').innerHTML = html;
+
 
     });
 </script>

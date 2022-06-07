@@ -51,15 +51,43 @@
             </select>
             <br /><br /> Hình ảnh:<br />
             <input type="file" id="txt-file" name="myfile"><br><br> Số lượng:<br />
-            <input type="number" min="1" max="99999" class="txt" name="txtTenDanhMuc" id="txt-soluong" required style="width:300px;" /><br /><br /> Đơn giá:<br />
-            <input type="number" min="1" max="100000000" class="txt" name="txtTenDanhMuc" id="txt-dongia" required style="width:300px;" /><br /><br />
-            <input type="submit" class="btn" name="btnThemDanhMuc" id="btnThemDanhMuc" value="Thêm" onClick="addSanPham()" />
+            <input type="text" id="txt-soluong" required style="width:300px;" /><br /><br /> Đơn giá:<br />
+            <input type="text" id="txt-dongia" required style="width:300px;" /><br /><br />
+            <input type="submit" class="btn" name="btnThemDanhMuc" id="btnThemDanhMuc" value="Sửa" onClick="updateSP()" />
         </div>
     </div>
     <!--END CONTENT-->
-
-
-
 </body>
+<script>
+    var jsonString = localStorage.getItem("sanpham");
+    var list = JSON.parse(jsonString);
+    var index = localStorage.getItem("index");
+    var sp = list[index];
+    console.log(sp)
+    document.getElementById("txt-tensp").value = sp.tensp
+    document.getElementById("txt-hangsx").value = sp.hangsx;
+
+    document.getElementById("txt-soluong").value = parseInt(sp.soluong);
+    document.getElementById("txt-dongia").value = parseInt(sp.dongia);
+
+    function updateSP() {
+        var tensp = document.getElementById("txt-tensp").value;
+        var hangsx = document.getElementById("txt-hangsx").value;
+        var file = document.getElementById("txt-file").value;
+        var soluong = document.getElementById("txt-soluong").value;
+        var dongia = document.getElementById("txt-dongia").value;
+        var product = {
+            tensp: tensp,
+            hangsx: hangsx,
+            file: file,
+            soluong: soluong,
+            dongia: dongia,
+        };
+        list[index] = product
+        localStorage.setItem("sanpham", JSON.stringify(list));
+        alert("Cập nhật sản phẩm thành công");
+        location.replace("./sanpham.html");
+    }
+</script>
 
 </html>
